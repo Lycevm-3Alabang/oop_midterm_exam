@@ -22,7 +22,7 @@ public static class Examination
         score += AssertEqual(account.Balance, 70, "Balance should be 70");
 
         // 2. Inheritance Examination - Manager
-        Employee manager = new Manager("Alice", 5, 50000 );
+        Employee manager = new Manager("Alice", 5, 5000 );
         score += AssertEqual(manager.ToString(), "Alice is managing a team of 5 members", "Should be equal");
 
         // 3. Interface Examination - Circle

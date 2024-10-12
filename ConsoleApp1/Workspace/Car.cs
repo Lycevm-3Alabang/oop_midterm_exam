@@ -9,11 +9,13 @@
         public Car(Engine engine)
         {
             _engine = engine;
+            IsEngineStarted = false;
         }
 
         public void StartCar()
         {
             _engine.Start();
+            IsEngineStarted = true;
         }
 
     }
@@ -23,6 +25,7 @@
     {
         public void Start()
         {
+            Console.WriteLine("Engine Started");
         }
     }
 
